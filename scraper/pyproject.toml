@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aircraft-tracker"
+version = "0.1.0"
+description = "Extract exhaustive data on commercial aircraft accidents from Wikipedia (1919–2026)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "beautifulsoup4>=4.14.3",
+    "lxml>=6.0.2",
+    "rich>=14.3.3",
+    "typer>=0.24.1",
+    "tqdm>=4.67.3",
+    "tenacity>=9.1.4",
+    "orjson>=3.11.7",
+    "aiohttp>=3.13.3",
+    "asyncio-throttle>=1.0.2",
+    "python-slugify>=8.0.4",
+]
+
+[project.scripts]
+aircraft-tracker = "aircraft_tracker.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aircraft_tracker"]
+
+[tool.hatch.envs.default]
+python = "3.11"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2.0",
+    "ruff>=0.4.0",
+]

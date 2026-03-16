@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pth
+
+# Data outputs (large generated files – not tracked in git)
+data/
+
+# Logs and local output
+*.log
+*.out
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Misc scratch/debug scripts
+inspect_out.txt
+deep_audit_out.txt
+flight.json
