@@ -3,11 +3,11 @@
   "source": "Wikipedia: List of accidents and incidents involving commercial aircraft",
   "source_url": "https://en.wikipedia.org/wiki/List_of_accidents_and_incidents_involving_commercial_aircraft",
   "status": "success",
-  "record_count": 1905,
-  "generated_at": "2026-05-17T04:27:23.316762Z",
-  "started_at": "2026-05-17T04:23:37.388450Z",
-  "completed_at": "2026-05-17T04:27:23.316762Z",
-  "duration_seconds": 225.93,
+  "record_count": 1910,
+  "generated_at": "2026-05-24T04:31:16.769078Z",
+  "started_at": "2026-05-24T04:26:57.778378Z",
+  "completed_at": "2026-05-24T04:31:16.769078Z",
+  "duration_seconds": 258.99,
   "scrape_config": {
     "concurrency": 5,
     "delay_seconds": 0.4
